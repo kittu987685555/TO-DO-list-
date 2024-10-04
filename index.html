@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="todos-bg-container">
+        <div class="container">
+            <div class="application  row justify-content-center ">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <h1 class="todos-heading text-center">To-Do List</h1>
+                    <h1 class="create-task-heading">
+                        Create <span class="create-task-heading-subpart">Task</span>
+                    </h1>
+
+
+                    <div class="input-group mb-3">
+                        <input type="text" id="todoUserInput" class="form-control"
+                            placeholder="Tasks needs to be done?">
+                       
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" id="addTodoButton">
+                                <i class="fas fa-plus-circle"></i> ADD 
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div>
+                        <h2 class="todo-items-heading">
+                            <span class="todo-items-heading-subpart">Tasks</span>
+                        </h2>
+
+
+                        <div class="task-buttons text-center mb-3">
+                            <button id="showAllTasksButton" class="btn btn-info">All Tasks</button>
+                            <button id="showCompletedTasksButton" class="btn btn-success">Completed</button>
+                            <button id="showIncompleteTasksButton" class="btn btn-warning">Incomplete</button>
+                          
+                        </div>
+
+                        <ul class="list-group" id="todoItemsContainer"></ul>
+
+                        <div class="text-center mt-3">
+                            <button class="btn btn-secondary" id="saveTodoButton">
+                                <i class="fas fa-save"></i> Save
+                            </button>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

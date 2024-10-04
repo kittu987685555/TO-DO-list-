@@ -1,0 +1,159 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.todos-bg-container {
+    background:#F8F9FA ;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.container{
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+
+}
+.application{
+    margin: 20px    ;
+}
+
+.todos-heading {
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.todo-items-heading{
+    text-align: center;
+}
+
+#todoUserInput {
+    height: 45px;
+   
+}
+
+.task-buttons button {
+    margin: 5px;
+}
+.list-group{
+    display: flex;
+    gap: 15px;
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .todos-heading {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.label-container {
+    background-color: #f9f9f9;
+    height: 100%;
+    display: flex;
+    align-items: center;
+ 
+    margin: 0 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e0e0e0; 
+}
+
+.checkbox-label {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem; 
+    font-weight: 400;
+    color: #333; 
+    padding: 5px 10px; 
+    margin: 0;
+    flex-grow: 2;
+   
+}
+
+
+.icons-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.edit-icon {
+    cursor: pointer;
+    color: #007bff; 
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.edit-icon:hover, .delete-icon:hover {
+    color: #0056b3;
+}
+.delete-icon{
+    cursor: pointer;
+    color: red; 
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #999;
+}
+
+
+.checkbox-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.edit-icon {
+    margin-right: 20px; 
+    font-size: 1.2rem; 
+}
+
+.delete-icon {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 500px) {
+    .checkbox-label {
+        font-size: 0.85rem;
+        padding: 5px;
+    }
+
+    .icons-container {
+        gap: 5px; 
+    }
+
+    .edit-icon, .delete-icon {
+        font-size: 1rem;
+    }
+}
